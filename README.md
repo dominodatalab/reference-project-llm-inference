@@ -10,7 +10,7 @@ Project to show how to generate text output from LLMs using different inference 
 * [bench_ct2.ipynb](bench_ct2.ipynb) : 
 
 * [bench_vllm.ipynb](bench_vllm.ipynb) :
-* 
+  
 * [convert_hf_ct.ipynb](convert_hf_ct.ipynb) :
   
 * [app.sh](app.sh) : The shell script needed to run the chat app
