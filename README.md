@@ -3,21 +3,21 @@
 # OSS LLM Inference Reference Project
 Project to show how to generate text output from LLMs using different inference frameworks
 
-* [bench_ct2.ipynb](bench_ct2.ipynb) : This file loads a PDF,converts it to embeddings, stores the embeddings in Pinecone, runs the semantic search against the embeddings, constructs a prompt and calls OpenAI's models to get a response. You will need your OpenAPI and Pinecone keys to be set in the environment for this example.
+* [ft_falcon7b_8bit_lora.ipynb](ft_falcon7b_8bit_lora.ipynb) : 
 
-* [bench_ct2.ipynb](bench_ct2.ipynb) : This file loads a PDF, converts it to embeddings, stores the embeddings locally using a FAISS index, runs the semantic search against the embeddings, constructs a prompt and calls OpenAI's models to get a response. You will need your OpenAPI key to be set in the environment for this example.
+* [bench_ct2.ipynb](bench_ct2.ipynb) : 
 
-* [bench_vllm.ipynb](bench_vllm.ipynb) : This file loads a documents from a Domino Dataset, converts it to embeddings, stores the embeddings locally using a FAISS index (there is code you can uncomment if you want to use Pinecone), runs the semantic search against the embeddings, constructs a prompt and calls OpenAI's models to get a response. You will need your OpenAPI key to be set in the environment for this example.
+* [bench_ct2.ipynb](bench_ct2.ipynb) : 
 
-* [faiss_ddl_doc_store.pkl](faiss_store.pkl) : This file contains the FAISS embeddings of Domino's documentation . You can use this if you don't want to (re)compute embeddings of Select_Global_Value_Fund.pdf again
-
+* [bench_vllm.ipynb](bench_vllm.ipynb) :
+* 
+* [convert_hf_ct.ipynb](convert_hf_ct.ipynb) :
+  
 * [app.sh](app.sh) : The shell script needed to run the chat app
 
-* [app.py](app.py) : Streamlit app code for the Q&A chatbot. This app uses ```faiss_ddl_doc_store.pkl``` for the embeddings
+* [app.py](app.py) : Streamlit app code for the summarization app. This app uses the `ctranslate2` model to generate responses
 
-* [Select_Global_Value_Fund.pdf](Select_Global_Value_Fund.pdf) : A report that can be used as an example for the flow that has been described above in case you want to compute embeddings on a fresh document
-
-* [Solution_Overview.pdf](Solution_Overview.pdf) : A diagram that depicts the different components and the flow of information between them
+* [model.py](model.py) : A diagram that depicts the different components and the flow of information between them
 
 ## Setup instructions
 
