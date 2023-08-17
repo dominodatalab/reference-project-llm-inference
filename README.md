@@ -17,8 +17,8 @@ Project to show how to generate text output from LLMs using different inference 
 
 * [app.py](app.py) : Streamlit app code for the summarization app. This app uses the `ctranslate2` model to generate responses
 
-* [model.py](model.py) : A diagram that depicts the different components and the flow of information between them
-
+* [model.py](model.py) :
+  
 * ![Summarization app](summarization_app.png)
 
 ## Setup instructions
