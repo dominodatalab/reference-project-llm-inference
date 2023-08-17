@@ -1,7 +1,7 @@
 *Disclaimer - Domino Reference Projects are starter kits built by Domino researchers. They are not officially supported by Domino. Once loaded, they are yours to use or modify as you see fit. We hope they will be a beneficial tool on your journey!
 
 # OSS LLM Inference Reference Project
-Project to show how to generate text output from LLMs using different inference frameworks
+Project to show how to generate text output from LLMs using different inference frameworks. Please note that the execution time to generate output will differ based on the hardware and model you are using, the notebooks in this project were run on **1** `V100 GPU` that has 24GB of VRAM.
 
 * [ft_falcon7b_8bit_lora.ipynb](ft_falcon7b_8bit_lora.ipynb) : This notebook contains code to fine tune a LoRA adapter for the Falcon-7b model to perform summarization. The code also logs training metrics to `mlflow` and can be viewed in the `Experiments` section of the project.
 
