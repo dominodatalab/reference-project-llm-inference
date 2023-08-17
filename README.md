@@ -19,6 +19,8 @@ Project to show how to generate text output from LLMs using different inference 
 
 * [model.py](model.py) : A diagram that depicts the different components and the flow of information between them
 
+* ![Summarization app](summarization_app.png)
+
 ## Setup instructions
 
 This project requires the following [compute environments](https://docs.dominodatalab.com/en/latest/user_guide/f51038/environments/) to be present:
