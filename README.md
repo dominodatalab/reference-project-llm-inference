@@ -3,15 +3,13 @@
 # OSS LLM Inference Reference Project
 Project to show how to generate text output from LLMs using different inference frameworks
 
-* [ft_falcon7b_8bit_lora.ipynb](ft_falcon7b_8bit_lora.ipynb) : 
+* [ft_falcon7b_8bit_lora.ipynb](ft_falcon7b_8bit_lora.ipynb) : This notebook contains code to fine tune a LoRA adapter for the Falcon-7b model to perform summarization
 
-* [bench_ct2.ipynb](bench_ct2.ipynb) : 
+* [convert_hf_ct.ipynb](convert_hf_ct.ipynb) : : This notebook contains code to convert a Huggingface model to a `ctranslate2` model. `ctranslate2` does not support adapters out of the box so we merge it with the model and export it for subsequent use
 
-* [bench_ct2.ipynb](bench_ct2.ipynb) : 
+* [bench_ct2.ipynb](bench_ct2.ipynb) : This notebook contains code that loads a `ctranslate2` model and generates output from it. 
 
-* [bench_vllm.ipynb](bench_vllm.ipynb) :
-  
-* [convert_hf_ct.ipynb](convert_hf_ct.ipynb) :
+* [bench_vllm.ipynb](bench_vllm.ipynb) :  This notebook contains code that uses `vLLM` to generate output from a Huggingface model that has the summarization adapter attached to it
   
 * [app.sh](app.sh) : The shell script needed to run the chat app
 
