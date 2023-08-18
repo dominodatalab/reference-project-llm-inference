@@ -23,8 +23,8 @@ In general, `ctranslate2` is a good choice to run LLMs on CPU, GPU accelerators 
 
 
  <p float="left">
-  <img src="summarization_app.png" width="415" height="300" />
-  <img src="mlflow.png" width="415" height="300" /> 
+  <img src="summarization_app.png" width="410" height="300" />
+  <img src="mlflow.png" width="410" height="300" /> 
 </p>
 
 
