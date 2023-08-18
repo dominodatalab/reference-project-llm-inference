@@ -10,7 +10,7 @@ In general, `ctranslate2` is a good choice to run LLMs on CPU, GPU accelerators 
 * [convert_hf_ct.ipynb](convert_hf_ct.ipynb) : : This notebook contains code to convert a Huggingface model to a `ctranslate2` model. `ctranslate2` does not support adapters out of the box so we merge it with the model and export it for subsequent use
 
 * [bench_ct2.ipynb](bench_ct2.ipynb) : This notebook contains code that loads a `ctranslate2` model and generates output from it.
-* 
+  
 * [bench_hf.ipynb](bench_hf.ipynb) : This notebook contains code that loads a `Huggingface` model and generates output from it. 
 
 * [bench_vllm.ipynb](bench_vllm.ipynb) :  This notebook contains code that uses `vLLM` to generate output from a Huggingface model that has the summarization adapter attached to it
