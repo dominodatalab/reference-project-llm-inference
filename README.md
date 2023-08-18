@@ -3,7 +3,7 @@
 # OSS LLM Inference Reference Project
 Project to show how to generate text output from LLMs using different inference frameworks. Please note that the execution time to generate output will differ based on the hardware and model you are using, the notebooks in this project were run on 1 `V100 GPU` that has 24GB of VRAM. The `%%timeit%%` magic has been used just for the purpose of generating statistically valid execution times.
 
-In general, `ctranslate2` is a good choice to run LLMs on CPU, GPU accelerators while `vLLM` is most suited for use cases that require scale as it can be backed by Ray ; the native Huggingface option is good for prototyping and development and small scale use cases that leverage GPUs.  
+In general, `ctranslate2` is a good choice to run LLMs on CPU, GPU accelerators and is highly performant while `vLLM` is most suited for use cases that require scale as it can be backed by Ray ; the native Huggingface option is good for prototyping and development and small scale use cases that leverage GPUs.  
 
 * [ft_falcon7b_8bit_lora.ipynb](ft_falcon7b_8bit_lora.ipynb) : This notebook contains code to fine tune a LoRA adapter for the Falcon-7b model to perform summarization. The code also logs training metrics to `mlflow` and can be viewed in the `Experiments` section of the project.
 
