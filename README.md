@@ -5,6 +5,8 @@ This project shows how to generate text output from a fine tuned LLM (Falcon-7b 
 
 In general, `ctranslate2` is a good choice to run LLMs on CPU, GPU accelerators and is highly performant while `vLLM` is most suited for use cases that require scale as it can be backed by Ray ; the native Huggingface option is good for prototyping and development and small scale use cases that leverage GPUs.  
 
+Here are a list of important files in the project that you might need to edit in order to customize this further for your use case.
+
 * [ft_falcon7b_8bit_lora.ipynb](ft_falcon7b_8bit_lora.ipynb) : This notebook contains code to fine tune a LoRA adapter for the Falcon-7b model to perform summarization. The code also logs training metrics to `mlflow` and can be viewed in the `Experiments` section of the project.
 
 * [convert_hf_ct.ipynb](convert_hf_ct.ipynb) : : This notebook contains code to convert a Huggingface model to a `ctranslate2` model. `ctranslate2` does not support adapters out of the box so we merge it with the model and export it for subsequent use
