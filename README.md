@@ -17,7 +17,7 @@ Project to show how to generate text output from LLMs using different inference 
 
 * [model.py](model.py) : This file has sample code that shows how to use the `ctranslate2` model as an API. Please ensure that the build pods have enough resources to build the API
   
-* ![Summarization app](summarization_app.png)
+* ![Summarization app](summarization_app.png)  * ![MlFlow](mlflow.png)
 
 ## Setup instructions
 
