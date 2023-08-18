@@ -25,7 +25,7 @@ tokenizer = transformers.AutoTokenizer.from_pretrained(model_id)
 prompt_template = f"Summarize the chat dialogue:\n{{dialogue}}\n---\nSummary:\n"
      
 #Generate the output from the LLM
-def generate(prompt: str = None):
+def generate(prompt: str = None, new_tokens: int = 200):
     if prompt is None:
         return 'Please provide a prompt.'
             
@@ -33,7 +33,6 @@ def generate(prompt: str = None):
     prompt = prompt_template.format(dialogue=prompt)
     # Tokenize the prompt
     tokens = tokenizer.convert_ids_to_tokens(tokenizer.encode(prompt))
-    new_tokens = 200
     max_length = len(tokens) + new_tokens
     tokens_per_sec = 0
     start_time = time.time()
