@@ -15,7 +15,8 @@ os.environ['LD_LIBRARY_PATH'] =  cuda_install_dir
      
 # Load the ctranslate model
 model_device = 'cuda' if torch.cuda.is_available() else 'cpu'
-generator = ctranslate2.Generator("/domino/datasets/local/SM-LLM", device=model_device)
+# Change the location to the folder where your ctranslate model exists 
+generator = ctranslate2.Generator("/mnt/ct2_int8", device=model_device)
      
 # load the tokenizer
 model_id = 'tiiuae/falcon-7b'
