@@ -31,6 +31,9 @@ Here are a list of important files in the project that you might need to edit in
    <img src="summarization_app.png" width="410" height="300" />
 </p>
 
+ <p float="left">
+  <img src="model_api.png" width = 860 height="350"  />
+</p>
 
 
 
