@@ -36,7 +36,7 @@ def generate(prompt: str = None, new_tokens: int = 200):
     max_length = len(tokens) + new_tokens
     tokens_per_sec = 0
     start_time = time.time()
-    results = generator.generate_batch([tokens], sampling_topk=10, max_length=max_length, include_prompt_in_result=True)
+    results = generator.generate_batch([tokens], sampling_topk=10, max_length=new_tokens, include_prompt_in_result=False)
     end_time = time.time()
     output_text = tokenizer.decode(results[0].sequences_ids[0])
     tokens_per_sec = round(new_tokens / (end_time - start_time),3)
