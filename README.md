@@ -27,8 +27,8 @@ Here are a list of important files in the project that you might need to edit in
 
 
  <p float="left">
-  <img src="summarization_app.png" width="410" height="300" />
   <img src="mlflow.png" width="410" height="300" /> 
+   <img src="summarization_app.png" width="410" height="300" />
 </p>
 
 
