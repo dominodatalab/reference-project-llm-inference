@@ -39,7 +39,8 @@ Here are a list of important files in the project that you might need to edit in
 
 ## Setup instructions
 
-This project requires the following [compute environments](https://docs.dominodatalab.com/en/latest/user_guide/f51038/environments/) to be present:
+This project requires the following [compute environments](https://docs.dominodatalab.com/en/latest/user_guide/f51038/environments/) to be present. Also please ensure the [‘Automatically make compatible with Domino’](https://docs.dominodatalab.com/en/latest/user_guide/a00d1b/automatic-adaptation-of-custom-images/#_pre_requisites_for_automatic_custom_image_compatibility_with_domino) checkbox is selected and create the environment afresh instead of duplicating an existing environment that does not use the same base image and dependencies.
+
 
 ### LLM Inference
 **Environment Base** 
