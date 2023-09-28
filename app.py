@@ -35,8 +35,8 @@ cuda_install_dir = '/'.join(nvidia.__file__.split('/')[:-1]) + '/cuda_runtime/li
 os.environ['LD_LIBRARY_PATH'] =  cuda_install_dir
 
 
-# Load the ctranslate model
-model_path = '/domino/datasets/local/SM-LLM/'
+# Load the ctranslate model, please change this to where you have saved the ctranslate2 model
+model_path = '/mnt/data/SM-LLM-Inference/'
 hf_model_name = 'tiiuae/falcon-7b'
 model_device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
