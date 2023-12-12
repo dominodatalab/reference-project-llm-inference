@@ -10,21 +10,21 @@ In general, `ctranslate2` is a good choice to run LLMs on CPU, GPU accelerators 
 
 Here are a list of important files in the project that you might need to edit in order to customize this further for your use case.
 
-* [ft_falcon7b_8bit_lora.ipynb](ft_falcon7b_8bit_lora.ipynb) : This notebook contains code to fine tune a LoRA adapter for the Falcon-7b model to perform summarization. The code also logs training metrics to `mlflow` and can be viewed in the `Experiments` section of the project.
+* [ft_falcon7b_8bit_lora.ipynb](https://github.com/dominodatalab/reference-project-llm-inference/blob/release-1.0.0/ft_falcon7b_8bit_lora.ipynb) : This notebook contains code to fine tune a LoRA adapter for the Falcon-7b model to perform summarization. The code also logs training metrics to `mlflow` and can be viewed in the `Experiments` section of the project.
 
-* [convert_hf_ct.ipynb](convert_hf_ct.ipynb) : : This notebook contains code to convert a Huggingface model to a `ctranslate2` model. `ctranslate2` does not support adapters out of the box so we merge it with the model and export it for subsequent use
+* [convert_hf_ct.ipynb](https://github.com/dominodatalab/reference-project-llm-inference/blob/release-1.0.0/convert_hf_ct.ipynb) : : This notebook contains code to convert a Huggingface model to a `ctranslate2` model. `ctranslate2` does not support adapters out of the box so we merge it with the model and export it for subsequent use
 
-* [bench_ct2.ipynb](bench_ct2.ipynb) : This notebook contains code that loads a `ctranslate2` model and generates output from it.
+* [bench_ct2.ipynb](https://github.com/dominodatalab/reference-project-llm-inference/blob/release-1.0.0/bench_ct2.ipynb) : This notebook contains code that loads a `ctranslate2` model and generates output from it.
   
-* [bench_hf.ipynb](bench_hf.ipynb) : This notebook contains code that loads a `Huggingface` model and generates output from it. 
+* [bench_hf.ipynb](https://github.com/dominodatalab/reference-project-llm-inference/blob/release-1.0.0/bench_hf.ipynb) : This notebook contains code that loads a `Huggingface` model and generates output from it. 
 
-* [bench_vllm.ipynb](bench_vllm.ipynb) :  This notebook contains code that uses `vLLM` to generate output from a Huggingface model that has the summarization adapter attached to it
+* [bench_vllm.ipynb](https://github.com/dominodatalab/reference-project-llm-inference/blob/release-1.0.0/bench_vllm.ipynb) :  This notebook contains code that uses `vLLM` to generate output from a Huggingface model that has the summarization adapter attached to it
   
-* [app.sh](app.sh) : The shell script needed to run the chat app
+* [app.sh](https://github.com/dominodatalab/reference-project-llm-inference/blob/release-1.0.0/app.sh) : The shell script needed to run the chat app
 
-* [app.py](app.py) : Streamlit app code for the summarization app. This app uses the `ctranslate2` model to generate responses
+* [app.py](https://github.com/dominodatalab/reference-project-llm-inference/blob/release-1.0.0/app.py) : Streamlit app code for the summarization app. This app uses the `ctranslate2` model to generate responses
 
-* [model.py](model.py) : This file has sample code that shows how to use the `ctranslate2` model as an API. Please ensure that the build pods have enough resources to build the API and the Model API has the right resource quota assigned to it
+* [model.py](https://github.com/dominodatalab/reference-project-llm-inference/blob/release-1.0.0/model.py) : This file has sample code that shows how to use the `ctranslate2` model as an API. Please ensure that the build pods have enough resources to build the API and the Model API has the right resource quota assigned to it
 \
 &nbsp;
 
@@ -46,7 +46,11 @@ This project requires the following [compute environments](https://docs.dominoda
 
 
 ### LLM Inference
-**Environment Base** 
+
+#### Hardware Requirements
+The notebooks in this project require 1 V100 GPU that has 24GB of VRAM.
+
+#### Environment Requirements
 
 `nvcr.io/nvidia/pytorch:22.12-py3`
 
