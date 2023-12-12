@@ -46,7 +46,11 @@ This project requires the following [compute environments](https://docs.dominoda
 
 
 ### LLM Inference
-**Environment Base** 
+
+#### Hardware Requirements
+The notebooks in this project require 1 V100 GPU that has 24GB of VRAM.
+
+#### Environment Requirements
 
 `nvcr.io/nvidia/pytorch:22.12-py3`
 
