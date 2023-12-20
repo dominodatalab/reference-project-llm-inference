@@ -1,7 +1,7 @@
 # OSS LLM Inference Template
 
 ## License
-This template is licensed to Customer subject to the terms of the license agreement between Domino and the Customer on file.
+This template is licensed under Apache 2.0 and contains the following open source components: Transformer (Apache 2.0)[https://github.com/huggingface/transformers/blob/main/LICENSE], Falcon (Apache 2.0)[https://huggingface.co/tiiuae/falcon-7b/blob/main/README.md], MLFlow (Apache 2.0)[https://github.com/mlflow/mlflow/blob/master/LICENSE.txt], NVIDIA [EULA](https://docs.nvidia.com/cuda/eula/index.html#license-grant)).
 
 ## About this template
 This project shows how to generate text output from a fine tuned LLM (Falcon-7b finetuned for summarization) using different inference frameworks. This project also has code that deploys the fine tuned LLM as a Model API and an app in Domino.Please note that the execution time to generate output will differ based on the hardware and model you are using, the notebooks in this project were run on 1 `V100` GPU that has 24GB of VRAM. 
