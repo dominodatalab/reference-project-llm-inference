@@ -33,14 +33,15 @@ Here are a list of important files in the project that you might need to edit in
 &nbsp;
 
 
- <p float="left">
-  <img src="mlflow.png" width="410" height="300" /> 
-   <img src="model_api.png" width="410" height="300" />
+<p float="left">
+  <img src="https://github.com/dominodatalab/reference-project-llm-inference/blob/a83eae919f8cbc1bdb206ef243f088eda7ce9523/mlflow.png?raw=true" width="410" height="300" /> 
+  <img src="https://github.com/dominodatalab/reference-project-llm-inference/blob/a83eae919f8cbc1bdb206ef243f088eda7ce9523/model_api.png?raw=true" width="410" height="300" />
 </p>
 
- <p float="center">
-  <img src="summarization_app.png" width = 860 height="350"  />
+<p float="center">
+  <img src="https://github.com/dominodatalab/reference-project-llm-inference/blob/a83eae919f8cbc1bdb206ef243f088eda7ce9523/summarization_app.png?raw=true" width="860" height="350" />
 </p>
+
 
 
 
