@@ -1,0 +1,69 @@
+{
+  "title": "Summarization using Fine Tuned LLM",
+  "id": "Summarization using Fine Tuned LLM",
+  "description": "This template shows how to generate text output from a fine tuned LLM (Falcon-7b finetuned for summarization) using different inference frameworks.",
+  "base64Logo": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEyMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHg9IjguNzgwNDkiIHk9IjE5LjExNzYiIHdpZHRoPSI1OC41MzY2IiBoZWlnaHQ9IjUuODgyMzUiIGZpbGw9IiNGNERCQjkiLz4KPHJlY3QgeD0iNTIuNjgyOSIgeT0iNjYuMTc2NSIgd2lkdGg9IjU4LjUzNjYiIGhlaWdodD0iNS44ODIzNSIgZmlsbD0iI0Y0REJCOSIvPgo8cmVjdCB4PSI4Ljc4MDQ5IiB5PSIyNy45NDEyIiB3aWR0aD0iNTguNTM2NiIgaGVpZ2h0PSI1Ljg4MjM1IiBmaWxsPSIjRjREQkI5Ii8+CjxyZWN0IHg9IjUyLjY4MjkiIHk9Ijc1IiB3aWR0aD0iNTguNTM2NiIgaGVpZ2h0PSI1Ljg4MjM1IiBmaWxsPSIjRjREQkI5Ii8+CjxyZWN0IHg9IjguNzgwNDkiIHk9IjQ1LjU4ODIiIHdpZHRoPSI1OC41MzY2IiBoZWlnaHQ9IjUuODgyMzUiIGZpbGw9IiNGNERCQjkiLz4KPHJlY3QgeD0iOC43ODA0OSIgeT0iMzYuNzY0NyIgd2lkdGg9IjU4LjUzNjYiIGhlaWdodD0iNS44ODIzNSIgZmlsbD0iI0Y0REJCOSIvPgo8cGF0aCBkPSJNNDUuNzE5NCA2OC41MTM5QzQ1LjkxNDcgNjguNzA5MSA0NS45MTQ3IDY5LjAyNTcgNDUuNzE5NCA2OS4yMjFMNDIuNTM3NCA3Mi40MDNDNDIuMzQyMiA3Mi41OTgyIDQyLjAyNTYgNzIuNTk4MiA0MS44MzAzIDcyLjQwM0M0MS42MzUgNzIuMjA3NyA0MS42MzUgNzEuODkxMSA0MS44MzAzIDcxLjY5NTlMNDQuNjU4NyA2OC44Njc0TDQxLjgzMDMgNjYuMDM5QzQxLjYzNSA2NS44NDM3IDQxLjYzNSA2NS41MjcyIDQxLjgzMDMgNjUuMzMxOUM0Mi4wMjU2IDY1LjEzNjYgNDIuMzQyMiA2NS4xMzY2IDQyLjUzNzQgNjUuMzMxOUw0NS43MTk0IDY4LjUxMzlaTTM1LjY1NjMgNjcuNTg4TDM2LjAwOSA2Ny4yMzM2TDM2LjAwOSA2Ny4yMzM2TDM1LjY1NjMgNjcuNTg4Wk0zMy42NjYgNjEuNjQxM0wzMy4xNjY3IDYxLjY2NzRMMzMuNjY2IDYxLjY0MTNaTTMzLjg0OTkgNTcuMTc0N0MzMy45NDg0IDU2LjkxNjcgMzQuMjM3MyA1Ni43ODczIDM0LjQ5NTMgNTYuODg1OEMzNC43NTMzIDU2Ljk4NDMgMzQuODgyNiA1Ny4yNzMyIDM0Ljc4NDIgNTcuNTMxMkwzMy44NDk5IDU3LjE3NDdaTTQ1LjM2NTggNjkuMzY3NEM0NC4yOTczIDY5LjM2NzQgNDMuMzExMSA2OS40MzQzIDQyLjM4MjMgNjkuNDk5NUM0MS40NjA2IDY5LjU2NDIgNDAuNTgyOCA2OS42Mjg0IDM5Ljc2NDIgNjkuNjE2MUMzOC4xMDU1IDY5LjU5MTMgMzYuNjE5NCA2OS4yNTE4IDM1LjMwMzYgNjcuOTQyNEwzNi4wMDkgNjcuMjMzNkMzNy4wNzQgNjguMjkzNCAzOC4yNjY1IDY4LjU5MzYgMzkuNzc5MiA2OC42MTYyQzQwLjU0NjMgNjguNjI3NyA0MS4zNzc1IDY4LjU2NzUgNDIuMzEyMyA2OC41MDE5QzQzLjI0MDEgNjguNDM2OCA0NC4yNTgyIDY4LjM2NzQgNDUuMzY1OCA2OC4zNjc0TDQ1LjM2NTggNjkuMzY3NFpNMzUuMzAzNiA2Ny45NDI0QzM0LjU1MiA2Ny4xOTQ1IDM0LjA1MDggNjYuMTc4MyAzMy43MjIgNjUuMDkwOUMzMy4zOTIxIDY0IDMzLjIyNjMgNjIuODA1NyAzMy4xNjY3IDYxLjY2NzRMMzQuMTY1MyA2MS42MTUyQzM0LjIyMjEgNjIuNjk5IDM0LjM3OTEgNjMuODA5MSAzNC42NzkyIDY0LjgwMTVDMzQuOTgwNCA2NS43OTc1IDM1LjQxNjEgNjYuNjQzNiAzNi4wMDkgNjcuMjMzNkwzNS4zMDM2IDY3Ljk0MjRaTTMzLjE2NjcgNjEuNjY3NEMzMy4xMzUyIDYxLjA2NjEgMzMuMTYzNiA1OC45NzMgMzMuODQ5OSA1Ny4xNzQ3TDM0Ljc4NDIgNTcuNTMxMkMzNC4xNjg0IDU5LjE0NDYgMzQuMTM3MyA2MS4wNzk1IDM0LjE2NTMgNjEuNjE1MkwzMy4xNjY3IDYxLjY2NzRaIiBmaWxsPSIjRDBEMEQwIi8+Cjwvc3ZnPgo=",
+  "categories": [
+    "Generative AI",
+    "Summarization",
+    "LLM"
+  ],
+  "mainRepository": {
+    "uri": "https://github.com/dominodatalab/reference-project-llm-inference",
+    "ref": {
+      "type": "commitId",
+      "value": "d06731e6c7ec40eb36bb691f28016714f31c97cb"
+    },
+    "serviceProvider": "github"
+  },
+  "owner": {
+    "name": "Domino",
+    "link": "https://domino.ai"
+  },
+  "models": [
+    {
+      "name": "Falcon-7b",
+      "link": "https://huggingface.co/tiiuae/falcon-7b",
+      "size": {
+        "value": 15,
+        "units": "GB"
+      },
+      "source": null
+    }
+  ],
+  "license": {
+    "name": "Apache 2.0",
+    "link": "https://github.com/dominodatalab/reference-project-llm-inference#license"
+  },
+  "data": {
+    "name": "This template uses the samsum dataset which contains about 16k messenger-like conversations from HuggingFace.",
+    "link": "https://huggingface.co/datasets/samsum"
+  },
+  "dataFormat": "JSON",
+  "recommended": true,
+  "prerequisites": [
+    {
+      "value": "Before using this project, please set up an environment following the linked instructions",
+      "link": "https://github.com/dominodatalab/reference-project-llm-inference/tree/main#llm-inference"
+    }
+  ],
+  "goals": null,
+  "hardwareTier": {
+    "value": "The notebooks in this project require 1 V100 GPU that has 24GB of VRAM.",
+    "link": null
+  },
+  "environmentKey": null,
+  "environmentReqs": {
+    "value": "Read the README.md of the code repository for more information.",
+    "link": "https://github.com/dominodatalab/reference-project-llm-inference"
+  },
+  "importedRepositories": null,
+  "supportedDominoVersions": [
+    "5.10.0"
+  ],
+  "projectSettings": null,
+  "test": {
+    "test_command": "tests/basic_checks.py",
+    "hardware_tier_id": "gpu-k8s"
+  }
+}
